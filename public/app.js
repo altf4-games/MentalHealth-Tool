@@ -2,13 +2,10 @@ document.getElementById("sendBtn").addEventListener("click", function () {
   const userInput = document.getElementById("userInput").value;
   if (userInput.trim() === "") return;
 
-  // Display user's message
   displayMessage(userInput, "user");
 
-  // Clear input field
   document.getElementById("userInput").value = "";
 
-  // Simulate chatbot response
   simulateChatbotResponse(userInput);
 });
 
@@ -25,13 +22,21 @@ function displayMessage(message, sender) {
   }
 
   chatWindow.appendChild(messageElement);
-  chatWindow.scrollTop = chatWindow.scrollHeight; // Scroll to the bottom
+  chatWindow.scrollTop = chatWindow.scrollHeight;
 }
 
 function simulateChatbotResponse(userMessage) {
-  // Placeholder for the actual API call to the chatbot backend
-  setTimeout(function () {
-    const botResponse = `You said: ${userMessage}`;
-    displayMessage(botResponse, "bot");
-  }, 1000);
+  fetch(`/generate?prompt=${encodeURIComponent(userMessage)}`)
+    .then((response) => response.json())
+    .then((data) => {
+      const botResponse = data.text;
+      const sentimentScore = data.sentiment.score;
+
+      displayMessage(botResponse, "bot");
+
+      // displayMessage(`Sentiment Score: ${sentimentScore}`, "bot");
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
 }
