@@ -1,0 +1,38 @@
+{
+    "positive": [
+        {
+            "title": "National Institute of Mental Health (NIMH)",
+            "description": "NIMH Resources",
+            "url": "https://www.nimh.nih.gov/health/find-help"
+        },
+        {
+            "title": "MentalHealth.gov",
+            "description": "Resources for Youth",
+            "url": "https://www.mentalhealth.gov/talk/young-people"
+        }
+    ],
+    "neutral": [
+        {
+            "title": "The Jed Foundation",
+            "description": "Focuses on emotional health and suicide prevention for teens and young adults.",
+            "url": "https://www.jedfoundation.org/"
+        }
+    ],
+    "negative": [
+        {
+            "title": "Active Minds",
+            "description": "A nonprofit supporting mental health awareness and education for students.",
+            "url": "https://www.activeminds.org/"
+        },
+        {
+            "title": "ULifeline",
+            "description": "An online resource for college mental health.",
+            "url": "https://www.ulifeline.org/"
+        },
+        {
+            "title": "Seize the Awkward",
+            "description": "Encourages young people to have conversations about mental health.",
+            "url": "https://seizetheawkward.org/"
+        }
+    ]
+}

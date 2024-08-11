@@ -31,10 +31,24 @@ function simulateChatbotResponse(userMessage) {
     .then((data) => {
       const botResponse = data.text;
       const sentimentScore = data.sentiment.score;
+      const resources = data.resources;
 
       displayMessage(botResponse, "bot");
 
       // displayMessage(`Sentiment Score: ${sentimentScore}`, "bot");
+
+      if (resources.length > 0) {
+        displayMessage(
+          "Here are some resources you might find helpful:",
+          "bot"
+        );
+        resources.forEach((resource) => {
+          displayMessage(
+            `<a href="${resource.url}" target="_blank" class="text-blue-500 underline">${resource.title}: ${resource.description}</a>`,
+            "bot"
+          );
+        });
+      }
     })
     .catch((error) => {
       console.error("Error:", error);

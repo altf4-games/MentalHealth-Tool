@@ -4,6 +4,7 @@ require("dotenv").config();
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 const Sentiment = require("sentiment");
 
+const resources = require("./resources.json");
 const sentiment = new Sentiment();
 const genAI = new GoogleGenerativeAI(process.env.API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
@@ -17,6 +18,15 @@ app.get("/generate", async (req, res) => {
   const sentimentResult = sentiment.analyze(prompt);
 
   console.log("Sentiment Analysis:", sentimentResult);
+
+  let recommendedResources = [];
+  if (sentimentResult.score > 0) {
+    recommendedResources = resources.positive;
+  } else if (sentimentResult.score === 0) {
+    recommendedResources = resources.neutral;
+  } else {
+    recommendedResources = resources.negative;
+  }
 
   // Tailor the prompt
   let tailoredPrompt = prompt;
@@ -32,7 +42,11 @@ app.get("/generate", async (req, res) => {
 
   // Send back the sentiment analysis along with the AI's response
   const text = result.response.text();
-  res.json({ sentiment: sentimentResult, text });
+  res.json({
+    sentiment: sentimentResult,
+    text,
+    resources: recommendedResources,
+  });
 });
 
 app.use(express.static("public"));
