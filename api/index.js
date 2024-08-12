@@ -22,11 +22,13 @@ app.get("/generate", async (req, res) => {
   let recommendedResources = [];
   if (sentimentResult.score > 0) {
     recommendedResources = resources.positive;
-  } else if (sentimentResult.score === 0) {
-    recommendedResources = resources.neutral;
-  } else {
-    recommendedResources = resources.negative;
+  } else if (sentimentResult.score < 0) {
+    recommendedResources = [...resources.neutral, ...resources.negative];
   }
+
+  // shuffle recommended resources
+  recommendedResources.sort(() => Math.random() - 0.5);
+  recommendedResources = recommendedResources.slice(0, 3);
 
   // Tailor the prompt
   let tailoredPrompt = prompt;
