@@ -25,6 +25,11 @@ function displayMessage(message, sender) {
   chatWindow.scrollTop = chatWindow.scrollHeight;
 }
 
+displayMessage(
+  "Hi there! I'm ZenBuddy, here to listen and support you. How are you feeling today? You can tell me anything on your mind.",
+  "bot"
+);
+
 function simulateChatbotResponse(userMessage) {
   fetch(`/generate?prompt=${encodeURIComponent(userMessage)}`)
     .then((response) => response.json())

@@ -9,13 +9,98 @@
             "title": "MentalHealth.gov",
             "description": "Resources for Youth",
             "url": "https://www.mentalhealth.gov/talk/young-people"
+        },
+        {
+            "title": "JED Foundation",
+            "description": "Supports emotional health and suicide prevention for teens and young adults.",
+            "url": "https://www.jedfoundation.org/"
+        },
+        {
+            "title": "Your Life Your Voice",
+            "description": "Provides a safe space for teens to discuss problems and seek advice.",
+            "url": "https://www.yourlifeyourvoice.org/Pages/home.aspx"
+        },
+        {
+            "title": "Seize the Awkward",
+            "description": "Offers tools to help students start conversations about mental health with friends.",
+            "url": "https://seizetheawkward.org/"
+        },
+        {
+            "title": "Teen Mental Health",
+            "description": "Improves mental health literacy for teens.",
+            "url": "http://teenmentalhealth.org/"
+        },
+        {
+            "title": "Mind Your Mind",
+            "description": "Engages youth to help manage stress, crisis, and mental health.",
+            "url": "https://mindyourmind.ca/"
+        },
+        {
+            "title": "ReachOut.com",
+            "description": "Offers practical support, tools, and tips to help young people get through tough times.",
+            "url": "https://au.reachout.com/"
+        },
+        {
+            "title": "Headspace",
+            "description": "Provides meditation and mindfulness practices tailored for young people.",
+            "url": "https://www.headspace.com/"
+        },
+        {
+            "title": "YoungMinds",
+            "description": "Focuses on the mental health of children and young people.",
+            "url": "https://youngminds.org.uk/"
         }
     ],
     "neutral": [
         {
             "title": "The Jed Foundation",
-            "description": "Focuses on emotional health and suicide prevention for teens and young adults.",
+            "description": "Focuses on emotional health for teens and young adults.",
             "url": "https://www.jedfoundation.org/"
+        },
+        {
+            "title": "Active Minds",
+            "description": "Promotes mental health awareness and education among college students.",
+            "url": "https://www.activeminds.org/"
+        },
+        {
+            "title": "MentalHealth.gov",
+            "description": "Comprehensive information on mental health issues.",
+            "url": "https://www.mentalhealth.gov/"
+        },
+        {
+            "title": "NAMI (National Alliance on Mental Illness)",
+            "description": "Offers resources specifically for teens and young adults.",
+            "url": "https://www.nami.org/Your-Journey/Teens-Young-Adults"
+        },
+        {
+            "title": "Mental Health America (MHA)",
+            "description": "Provides mental health resources and screening tools for youth.",
+            "url": "https://www.mhanational.org/youth"
+        },
+        {
+            "title": "The Steve Fund",
+            "description": "Dedicated to the mental health and emotional well-being of young people of color.",
+            "url": "https://www.stevefund.org/"
+        },
+        {
+            "title": "7 Cups",
+            "description": "A free, anonymous emotional support platform for teens.",
+            "url": "https://www.7cups.com/"
+        },
+        {
+            "title": "ULifeline",
+            "description": "An online resource for college students to seek mental health support.",
+            "url": "http://www.ulifeline.org/"
+        },
+        {
+            "title": "Youth.gov",
+            "description": "Offers information and resources on youth mental health from various U.S. government agencies.",
+            "url": "https://youth.gov/youth-topics/youth-mental-health"
+        },
+        {
+            "title": "The Child Mind Institute",
+            "description": "Provides resources on mental health and learning disorders in children and adolescents.",
+            "url": "https://childmind.org/"
         }
     ],
     "negative": [
@@ -33,6 +118,41 @@
             "title": "Seize the Awkward",
             "description": "Encourages young people to have conversations about mental health.",
             "url": "https://seizetheawkward.org/"
+        },
+        {
+            "title": "Crisis Text Line",
+            "description": "Provides immediate support via text for people in crisis.",
+            "url": "https://www.crisistextline.org/"
+        },
+        {
+            "title": "The Trevor Project",
+            "description": "Focuses on LGBTQ+ youth, offering crisis intervention and suicide prevention services.",
+            "url": "https://www.thetrevorproject.org/"
+        },
+        {
+            "title": "Suicide Prevention Lifeline",
+            "description": "A 24/7 hotline providing confidential support for people in distress.",
+            "url": "https://suicidepreventionlifeline.org/"
+        },
+        {
+            "title": "Self-Injury Outreach & Support",
+            "description": "Offers support for those struggling with self-injury.",
+            "url": "http://sioutreach.org/"
+        },
+        {
+            "title": "RAINN (Rape, Abuse & Incest National Network)",
+            "description": "Provides support for survivors of sexual assault and abuse.",
+            "url": "https://www.rainn.org/"
+        },
+        {
+            "title": "To Write Love on Her Arms",
+            "description": "Provides hope and support for people struggling with depression, addiction, self-injury, and suicide.",
+            "url": "https://twloha.com/"
+        },
+        {
+            "title": "Samaritans",
+            "description": "Offers confidential support for anyone feeling despair, distress, or suicidal.",
+            "url": "https://www.samaritans.org/"
         }
     ]
 }
