@@ -9,6 +9,19 @@ document.getElementById("sendBtn").addEventListener("click", function () {
   simulateChatbotResponse(userInput);
 });
 
+document.getElementById("userInput").addEventListener("keypress", function (e) {
+  if (e.key === "Enter") {
+    const userInput = document.getElementById("userInput").value;
+    if (userInput.trim() === "") return;
+
+    displayMessage(userInput, "user");
+
+    document.getElementById("userInput").value = "";
+
+    simulateChatbotResponse(userInput);
+  }
+});
+
 function displayMessage(message, sender) {
   const chatWindow = document.getElementById("chatWindow");
   const messageElement = document.createElement("div");

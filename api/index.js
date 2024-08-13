@@ -28,17 +28,22 @@ app.get("/generate", async (req, res) => {
 
   // shuffle recommended resources
   recommendedResources.sort(() => Math.random() - 0.5);
-  recommendedResources = recommendedResources.slice(0, 3);
+  recommendedResources = recommendedResources.slice(0, 2);
 
   // Tailor the prompt
   let tailoredPrompt = prompt;
 
-  if (sentimentResult.score < 0) {
-    tailoredPrompt = `This person seems a bit down: ${prompt}`;
-  } else if (sentimentResult.score > 0) {
-    tailoredPrompt = `This person is in a positive mood: ${prompt}`;
-  }
+  // Add context about the assistant's role
+  const assistantContext =
+    "You are an emotional assistant designed to help children and college students with their mental health. Your responses should be supportive, empathetic, and understanding, catering specifically to the needs of young individuals.";
 
+  if (sentimentResult.score < 0) {
+    tailoredPrompt = `${assistantContext} The user appears to be feeling down or stressed. Respond with empathy and offer support: "${prompt}"`;
+  } else if (sentimentResult.score > 0) {
+    tailoredPrompt = `${assistantContext} The user's mood seems neutral. Encourage and engage with their positive energy: "${prompt}"`;
+  } else {
+    tailoredPrompt = `${assistantContext} The user's mood seems neutral. Provide a balanced and thoughtful response: "${prompt}"`;
+  }
   // Generate response using the LLM
   const result = await model.generateContent([tailoredPrompt]);
 

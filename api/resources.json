@@ -1,36 +1,6 @@
 {
     "positive": [
         {
-            "title": "National Institute of Mental Health (NIMH)",
-            "description": "NIMH Resources",
-            "url": "https://www.nimh.nih.gov/health/find-help"
-        },
-        {
-            "title": "MentalHealth.gov",
-            "description": "Resources for Youth",
-            "url": "https://www.mentalhealth.gov/talk/young-people"
-        },
-        {
-            "title": "JED Foundation",
-            "description": "Supports emotional health and suicide prevention for teens and young adults.",
-            "url": "https://www.jedfoundation.org/"
-        },
-        {
-            "title": "Your Life Your Voice",
-            "description": "Provides a safe space for teens to discuss problems and seek advice.",
-            "url": "https://www.yourlifeyourvoice.org/Pages/home.aspx"
-        },
-        {
-            "title": "Seize the Awkward",
-            "description": "Offers tools to help students start conversations about mental health with friends.",
-            "url": "https://seizetheawkward.org/"
-        },
-        {
-            "title": "Teen Mental Health",
-            "description": "Improves mental health literacy for teens.",
-            "url": "http://teenmentalhealth.org/"
-        },
-        {
             "title": "Mind Your Mind",
             "description": "Engages youth to help manage stress, crisis, and mental health.",
             "url": "https://mindyourmind.ca/"
@@ -120,33 +90,8 @@
             "url": "https://seizetheawkward.org/"
         },
         {
-            "title": "Crisis Text Line",
-            "description": "Provides immediate support via text for people in crisis.",
-            "url": "https://www.crisistextline.org/"
-        },
-        {
-            "title": "Suicide Prevention Lifeline",
-            "description": "A 24/7 hotline providing confidential support for people in distress.",
-            "url": "https://suicidepreventionlifeline.org/"
-        },
-        {
-            "title": "Self-Injury Outreach & Support",
-            "description": "Offers support for those struggling with self-injury.",
-            "url": "http://sioutreach.org/"
-        },
-        {
-            "title": "RAINN (Rape, Abuse & Incest National Network)",
-            "description": "Provides support for survivors of sexual assault and abuse.",
-            "url": "https://www.rainn.org/"
-        },
-        {
-            "title": "To Write Love on Her Arms",
-            "description": "Provides hope and support for people struggling with depression, addiction, self-injury, and suicide.",
-            "url": "https://twloha.com/"
-        },
-        {
             "title": "Samaritans",
-            "description": "Offers confidential support for anyone feeling despair, distress, or suicidal.",
+            "description": "Offers confidential support for anyone feeling despair or distress.",
             "url": "https://www.samaritans.org/"
         }
     ]
